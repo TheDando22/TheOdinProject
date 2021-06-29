@@ -1,15 +1,19 @@
 let names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada']
-let para = document.querySelector('p');
+let para = document.createElement('p');
 
-function randomName() {
-    let name = Math.floor(Math.random() * names.length);
-    let choice = names[name];
-    para.textContent = choice;
+function random(min, max){
+    const result = Math.floor(Math.random() * (max - min)) + min;
+    console.log('result: ' + result);
+    return result;
 }
 
-randomName();
+function randomName(array) {
+    let name = array[random(0, array.length)];
+    console.log(name);
+    return name;
+}
 
-// Don't edit the code below here!
+para.textContent = randomName(names);
 
 section.innerHTML = ' ';
 
