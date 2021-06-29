@@ -12,10 +12,5 @@ const btn = document.querySelector('button');
     let HEIGHT = 75;
     let color = 'blue';
 
-    function draw() {
-        ctx.fillRect(x, y, WIDTH, HEIGHT);
-        ctx.fillRect(0,0, canvas.WIDTH, canvas.HEIGHT);
-        ctx.stroke();
-      }
-
+    
     btn.addEventListener('click',draw);
