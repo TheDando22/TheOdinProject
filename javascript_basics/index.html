@@ -15,40 +15,17 @@
         console.log(a + b);
     </script>
 
-<section class="preview">
-
-
-
-</section>
+<section class="preview"></section>
 
     <h1>Javascript Basics</h1>
     <p>Check out all this great stuff.</p>
-    <div id="drawing">
         
-        <!-- <button>Draw</button> -->
-        <canvas></canvas> 
-        
-    </div>
-    
-  <script>
-    let names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada']
-    let para = document.createElement('p');
+        <button>Draw</button>
 
-    function chooseName() { 
-        let randomName = Math.floor(Math.random() * names.length);
-        let name = names[randomName];
-        para.textContent = name;
+        <canvas width="300" height="150"></canvas> 
 
-    }// Add your code here
+    <script type="text/javascript" src="js/randomName.js"></script>
 
-    chooseName();
-
-    // Don't edit the code below here!
-
-    const section = document.querySelector('section');
-
-    section.appendChild(para);
-  </script>
     <script type="text/javascript" src="js/canvas.js"></script>
 </body>
 
