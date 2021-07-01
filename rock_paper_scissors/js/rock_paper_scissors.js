@@ -20,6 +20,9 @@ function game() {
 
     function userInput() { 
         let userEntry = prompt("Enter a 0 for Rock, 1 for Paper, or 2 for Scissors", "0");
+        // if ((userEntry !== 0) || (userEntry !== 1) || (userEntry !== 2)) {
+        //     userEntry = prompt("That was not one of the choices. Please enter 0, 1, or 2", "0");
+        // }
         playerSelection = choices[parseInt(userEntry)];
         return playerSelection;
     }
@@ -33,7 +36,7 @@ function game() {
     function playRound() {
         userInput();
         computerPlay();
-        console.log("Round " + counter +"\n" + "User:" + playerSelection + "\nComputer:" + computerSelection);
+        console.log("Round " + counter +"\n" + "User: " + playerSelection + "\nComputer: " + computerSelection);
 
         // If user enteres 0
         if (playerSelection === "Rock") {
@@ -84,19 +87,19 @@ function game() {
         }
     }
 
-    for (let i = 0;i <= 5; i++) {
+    for (let i = 0;i < 5; i++) {
         playRound();
         counter++;
     }
 
-    console.log("\n---------\n" + "Results:\n" + "Times you won: " + userScore + "\nTimes computer won: " + computerScore + "\nTimes there was a draw: " + drawScore);
+    console.log("Results:\n" + "---------\n" + "Times you won: " + userScore + "\nTimes computer won: " + computerScore + "\nTimes there was a draw: " + drawScore);
     if (userScore > computerScore) {
         console.log("Congratulations, You won the most!");
     }
     if (userScore < computerScore) {
         console.log("Uh oh, Computer was on a roll!");
     }
-    if (drawScore > (computerScore && userScore)) {
+    if ((drawScore > computerScore) && (drawScore > userScore)) {
         console.log("Similar wavelenghts. Lots of draws!");
     }
 
