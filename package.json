@@ -1,0 +1,27 @@
+{
+  "name": "theodinproject",
+  "version": "1.0.0",
+  "description": "Following along with The Odin Project to improve dev skills.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwdwork/TheOdinProject.git"
+  },
+  "keywords": [
+    "danwilderdesign",
+    "code"
+  ],
+  "author": "Dan Wilder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dwdwork/TheOdinProject/issues"
+  },
+  "homepage": "https://github.com/dwdwork/TheOdinProject#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
