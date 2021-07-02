@@ -39,7 +39,6 @@ function lastLetter (string) {
     console.log('String last letter: ' + result);
     document.getElementById('fourth_test').innerHTML = 'Original: ' + string + ' ' + 'Result: ' + result;
     return result;
-<<<<<<< HEAD
 }
 
 let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
@@ -47,6 +46,3 @@ let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz
 for (let i = 1; i <= answer; i++) {
     console.log(i);
   }
-=======
-}
->>>>>>> 99bafca131cc301ce7d962860a04c60ab91ea82e

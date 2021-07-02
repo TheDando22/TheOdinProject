@@ -102,6 +102,9 @@ function game() {
     if ((drawScore > computerScore) && (drawScore > userScore)) {
         console.log("Similar wavelenghts. Lots of draws!");
     }
+    if (drawScore === computerScore) {
+        console.log("Tie. You and the computer won the same amount of times!");
+    }
 
 }
   
