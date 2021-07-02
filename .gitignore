@@ -7,3 +7,5 @@ package.json
 config.rb
 
 node_modules/
+
+node_modules/*
