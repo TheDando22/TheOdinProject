@@ -3,6 +3,7 @@ $primary: #1d1d1d;
 body {
     font-family:'Helvetica', sans-serif;
     color:$primary;
+    font-size:18px;
 }
 
 ul li {
@@ -14,5 +15,6 @@ ul li {
 
     ul li {
         margin:1em;
+        padding:2em;
     }
 }

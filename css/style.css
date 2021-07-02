@@ -1,5 +1,21 @@
+/* line 3, ../sass/style.scss */
 body {
   font-family: 'Helvetica', sans-serif;
-  color: #1d1d1d; }
+  color: #1d1d1d;
+  font-size: 18px;
+}
 
-/*# sourceMappingURL=style.css.map */
+/* line 9, ../sass/style.scss */
+ul li {
+  display: block;
+}
+
+/* line 13, ../sass/style.scss */
+.content {
+  max-width: 1200px;
+}
+/* line 16, ../sass/style.scss */
+.content ul li {
+  margin: 1em;
+  padding: 2em;
+}
