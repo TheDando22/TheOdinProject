@@ -20,18 +20,21 @@ for (let i = 10;i >= 0;i--){
 
 // Loops Test your skills 1
 let myArray = ['tomatoes', 'chick peas', 'onions', 'rice', 'black beans'];
-    let list = document.createElement('ul');
+let list = document.createElement('ul');
 
-    for (let i = 0;i < myArray.length;i++) {
-        list = myArray[i];
-        if (i === myArray.length - 1) {
-            list += 'and ' + myArray[i] + '.';
-        } else {
-            list += myArray[i] + ', ';
-        }
+for (let i = 0;i < myArray.length;i++) {
+    let listItem = document.createElement('li');
+    listItem.textContent = myArray[i];
+    list.appendChild(listItem);
+    if (i !== myArray.length - 1) {
+        listItem.textContent = myArray[i] += ', ';
+    } else {
+        listItem.textContent = "and " + myArray[i] + ".";
     }
+    // loops1.appendChild(listItem);
+}
 
     // Don't edit the code below here!
 
-    const section = document.querySelector('section');
-    section.appendChild(list);
+const loops1 = document.querySelector('.loops1');
+loops1.appendChild(list);
