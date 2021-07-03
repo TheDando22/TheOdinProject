@@ -38,3 +38,66 @@ for (let i = 0;i < myArray.length;i++) {
 
 const loops1 = document.querySelector('.loops1');
 loops1.appendChild(list);
+
+
+function findName() {
+
+    const name = 'Mustafa';
+    let i = 0;
+    let para2 = document.createElement('p');
+
+    let phonebook = [
+    { name : 'Chris', number : '1549' },
+    { name : 'Li Kang', number : '9634' },
+    { name : 'Anne', number : '9065' },
+    { name : 'Francesca', number : '3001' },
+    { name : 'Mustafa', number : '6888' },
+    { name : 'Tina', number : '4312' },
+    { name : 'Bert', number : '7780' },
+    { name : 'Jada', number : '2282' },
+    ];
+
+    while(i < phonebook.length) {
+        if (phonebook[i].name === name) {
+            para2.textContent = "Name: " + phonebook[i].name + " Number: " + phonebook[i].number;
+            break;
+        } else {
+            para2.textContent = "No match.";
+        }
+        i++;    
+    }
+    
+    let loops2 = document.querySelector('.loops2');
+    loops2.appendChild(para2);
+}
+
+function loops3() {
+    let i = 500;
+    let para3 = document.createElement('p');
+
+    function isPrime(num) {
+      for(let i = 2; i < num; i++) {
+        if(num % i === 0) {
+          return false;
+        }
+      }
+
+      return true;
+    }
+
+    do {
+        if(isPrime(i)) {
+            para3.textContent += i + ", \n";
+        }
+        i--;
+    } while (i > 1);
+
+    // Don't edit the code below here!
+    let loops3 = document.querySelector('.loops3');
+    loops3.appendChild(para3);
+}
+
+loops3();
+findName();
+
+// Don't edit the code below here!
